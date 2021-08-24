@@ -27,3 +27,5 @@
 `echo $(($BREATH**$LOVE))` --> 'find exponent'
 `printf "%x\n" $DECIMAL` --> Cconvert to base 16 from base 10
  
+`set` --> list all local, environmental variables and functions
+ 
