@@ -6,17 +6,17 @@ commandd=$2
 echo "$filename"
 
 echo "creating file"
-touch 0x02-shell_redirections/$filename
+touch 0x03-shell_variables_expansions/$filename
 
 echo "enter file information - $commandd"
-echo "#!/bin/bash" > 0x02-shell_redirections/$filename
-echo "$commandd" >> 0x02-shell_redirections/$filename
+echo "#!/bin/bash" > 0x03-shell_variables_expansions/$filename
+echo "$commandd" >> 0x03-shell_variables_expansions/$filename
 
 echo "setting permissions"
-chmod u+x 0x02-shell_redirections/$filename
+chmod u+x 0x03-shell_variables_expansions/$filename
 
 echo "DONE"
 #./0x00-shell_basics/1-listit
 
-echo 'wc -c' 
-tail -1 0x02-shell_redirections/$filename | wc -c
+echo 'wc -l ' 
+tail -1 0x03-shell_variables_expansions/$filename | wc -c
