@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-
+# Script to print Best school and Hi
 num=10
 
 while [ $num -ne 0 ]

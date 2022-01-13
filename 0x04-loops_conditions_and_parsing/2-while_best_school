@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-
+# script to print est school with while statement
 num=10
 
 while [ $num -ne 0 ]

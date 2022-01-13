@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-
+# Script to print the clock
 for hour in $(seq 0 12)
 do
 	echo "Hour: $hour"

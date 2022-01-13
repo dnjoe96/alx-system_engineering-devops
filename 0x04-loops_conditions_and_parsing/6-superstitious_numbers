@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-
+# more Superstition
 num=1
 
 while [ $num -ne 21 ]

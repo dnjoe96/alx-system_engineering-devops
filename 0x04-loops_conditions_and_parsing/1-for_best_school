@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-
+# Script to print best school with for statement
 for n in $(seq 10)
 do
 	echo 'Best School'

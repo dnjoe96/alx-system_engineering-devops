@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-
+# script to print Best School with until statement
 num=10
 
 until [ $num -eq 0 ]

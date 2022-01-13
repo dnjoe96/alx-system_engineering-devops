@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-
+# The chinese superstition
 num=1
 
 while [ $num -ne 11 ]

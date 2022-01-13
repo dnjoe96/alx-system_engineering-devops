@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-
+# Script to print files
 for file in *
 do
 	echo "$file" | cut -d- -f2
