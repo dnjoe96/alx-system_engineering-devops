@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+# Script to check file
+if [ -e 'school' ]
+then
+	echo 'school file exists'
+else
+	echo 'school: cannot open '"'school'"' (No such file or directory)'
+	exit 1
+fi
+
+
+if [ -s 'school' ]
+then
+        echo 'school file is not empty'
+else
+        echo 'school file is empty'
+fi
+
+if [ -f 'school' ]
+then
+        echo 'school is a regular file'
+fi
