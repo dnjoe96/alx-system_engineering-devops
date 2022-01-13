@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+num=10
+
+while [ $num -ne 0 ]
+do
+	echo 'Best School'
+	((num--))
+done
