@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+# Script for fizz buzz
+
+NUM=0
+
+while [ $NUM -lt 100 ]
+do
+	((NUM++))
+
+	if [ $((NUM % 15)) -eq 0 ]
+	then
+		echo 'FizzBuzz'
+	elif [ $((NUM % 3)) -eq 0 ]
+	then
+		echo 'Fizz'
+	elif [ $((NUM % 5)) -eq 0 ]
+	then
+		echo 'Buzz'
+	else
+		echo "$NUM"
+	fi
+done
