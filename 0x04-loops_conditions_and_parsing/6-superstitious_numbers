@@ -5,15 +5,18 @@ num=1
 while [ $num -ne 21 ]
 do
 	echo "$num"
-	if [ $num -eq 4 ]
-	then
-		echo 'bad luck from China'
-	elif [ $num -eq 9 ]
-	then
-		echo 'bad luck from Japan'
-	elif [ $num -eq 17 ]
-	then
-		echo 'back luck from Italy'		
-	fi
+	case $num in
+		4)
+			echo 'bad luck from China'
+			;;
+
+		9)
+			echo 'bad luck from Japan'
+			;;
+
+		17)
+			echo 'back luck from Italy'
+			;;
+	esac		
 	((num++))
 done
