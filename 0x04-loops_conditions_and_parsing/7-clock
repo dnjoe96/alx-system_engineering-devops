@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+for hour in $(seq 0 12)
+do
+	echo "Hour: $hour"
+
+	MIN=1
+
+	while [ $MIN -lt 60 ]
+	do
+		echo $MIN
+		((MIN++))
+	done
+done
