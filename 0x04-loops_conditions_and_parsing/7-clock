@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 # Script to print the clock
-for hour in $(seq 0 12)
+
+hour=0
+
+while [ $hour -lt 13 ]
 do
 	echo "Hour: $hour"
 
@@ -11,4 +14,6 @@ do
 		echo $MIN
 		((MIN++))
 	done
+
+	((hour++))
 done
