@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# command to print listening sockets
+netstat -ano
