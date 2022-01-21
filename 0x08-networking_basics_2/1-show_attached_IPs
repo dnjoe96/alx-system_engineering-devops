@@ -1,2 +1,4 @@
 #!/usr/bin/env bash
-# script for ...
+# script for attached IPs
+
+ifconfig | awk -F '[: ]+' '/inet addr:/ {print $4}'
