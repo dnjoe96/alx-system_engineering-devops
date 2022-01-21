@@ -1,2 +1,19 @@
 #!/usr/bin/env bash
-# script for ...
+# script for changing IP in a docker isnstance
+
+echo 'before script'
+echo '=============='
+cat /etc/hosts
+
+cp /etc/hosts ~/hosts.new
+sed -i '/localhost/s/127.0.0.1/127.0.0.2/' ~/hosts.new
+sed -i '/facebook.com/s/157.240.11.35/8.8.8.8/' ~/hosts.new
+cp -f ~/hosts.new /etc/hosts
+
+echo 'After script'
+echo '==============='
+cat /etc/hosts
+
+cp -f /etc/hosts-cp /etc/hosts
+echo "Restored host file"
+echo "==================="
