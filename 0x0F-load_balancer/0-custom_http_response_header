@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# configure nginx server
+
+apt update
+apt-get -y install nginx
+ufw allow 'Nginx HTTP' 2> /dev/null
+sed -i "/listen 80 default_server;/a rewrite ^/redirect_me https://github.com/Sebas15897 permanent;" /etc/nginx/sites-available/default
+echo 'Hello World!' > /usr/share/nginx/html/index.html
+echo 'Hello World!' >  /var/www/html/index.nginx-debian.html
+sed -i "/server_name _;/a add_header X-Served-By $HOSTNAME;" /etc/nginx/sites-available/default
+service nginx start
