@@ -7,4 +7,5 @@ ufw allow 'Nginx HTTP' 2> /dev/null
 echo 'Hello World!' > /usr/share/nginx/html/index.html
 echo 'Hello World!' >  /var/www/html/index.nginx-debian.html
 sed -i '/listen 80 default_server;/ a \\trewrite ^/redirect_me https://github.com/dnjoe96 permanent;' /etc/nginx/sites-available/default
+sed -i '/listen 80 default_server;/ a \\trewrite ^/redirect_me/ https://github.com/dnjoe96 permanent;' /etc/nginx/sites-available/default
 service nginx restart
