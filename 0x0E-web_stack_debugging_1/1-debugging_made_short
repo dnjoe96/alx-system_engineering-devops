@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# configure nginx server
+apt-get -y install nginx
+sed -i '/listen 80 default_server;/ a \\tlisten 0.0.0.0:80 default_server;' /etc/nginx/sites-available/default
+service nginx restart
