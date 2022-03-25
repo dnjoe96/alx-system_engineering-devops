@@ -1,2 +1,3 @@
 #!/usr/bin/env bash
-# script for ...
+# script for listening at a given port
+nc -l localhost 9448
