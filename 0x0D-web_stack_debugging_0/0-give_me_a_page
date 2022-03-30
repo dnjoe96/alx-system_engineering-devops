@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# install and configure apache webserver
+apt update
+apt install apache2
+apache2ctl start
