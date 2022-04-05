@@ -1,4 +1,3 @@
-#!/usr/bin/bash
-# change user
-
-runuser -l $1 -c 'whoami' 2> /dev/null
+#!/usr/bin/env bash
+# run whoami as another user
+sudo -u "$1" whoami
