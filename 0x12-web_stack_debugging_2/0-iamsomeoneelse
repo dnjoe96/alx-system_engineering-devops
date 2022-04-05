@@ -1,0 +1,4 @@
+#!/usr/bin/bash
+# change user
+
+runuser -l $1 -c 'whoami' 2> /dev/null
