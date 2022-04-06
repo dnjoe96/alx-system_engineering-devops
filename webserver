@@ -1,0 +1,3 @@
+web01 - ssh ubuntu@34.73.174.35
+web02 - ssh ubuntu@34.139.252.217
+lb01 - ssh ubuntu@34.75.8.242
