@@ -1,3 +1,6 @@
 mysql> CREATE USER 'holberton_user'@'localhost' IDENTIFIED BY 'projectcorrection280hbtn';
 
 mysql> GRANT ALL ON *.* TO 'holberton_user'@'localhost';
+
+-- t’s good practice to run the FLUSH PRIVILEGES command. This will free up any memory that the server cached as a result of the preceding CREATE USER and GRANT statements:
+mysql> FLUSH PRIVILEGES;
