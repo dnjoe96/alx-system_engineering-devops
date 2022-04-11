@@ -10,7 +10,8 @@ if __name__ == "__main__":
     import requests
     from sys import argv
 
-    response = requests.get("https://jsonplaceholder.typicode.com/users").json()
+    response = requests.get(
+            "https://jsonplaceholder.typicode.com/users").json()
     d = {}
 
     for user in response:
