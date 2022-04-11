@@ -23,8 +23,7 @@ if __name__ == "__main__":
                      "https://jsonplaceholder.typicode.com/todos?userId={}"
                      .format(argv[1])
                     ).json()
-    
-    json_obj = {}
+
     obj_list = []
 
     for d in total:
@@ -36,7 +35,7 @@ if __name__ == "__main__":
 
         obj_list.append(one)
 
-    json[argv[1]] = obj_list
+    json_obj = {argv[1]: obj_list}
 
     with open('{}.json'.format(argv[1]), 'w') as f:
         json.dump(json_obj, f)
