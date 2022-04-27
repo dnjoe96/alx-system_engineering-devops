@@ -6,7 +6,14 @@ import requests
 
 
 def top_ten(subreddit):
-    """ Function to get the top ten hot topic """
+    """ Function to get the top ten hot topic
+
+    Args:
+        subreddit (str): The subreddit to query
+    Returns:
+        - The title of top 10 hot topics
+        - 0 if 'subreddit' is invalid.
+    """
     base_url = "https://www.reddit.com"
     header = {'User-Agent': 'JoeAPI', 'Content-Type': 'application/json'}
     param = {"limit": "10"}

@@ -6,7 +6,14 @@ import requests
 
 
 def number_of_subscribers(subreddit):
-    """ Function to get the number of subscribers to a sub reddit """
+    """ Function to get the number of subscribers to a sub reddit
+
+    Args:
+        subreddit (str): The subreddit to query
+    Returns:
+        - The number of subscribers if the subreddit is valid
+        - 0 if 'subreddit' is invalid.
+    """
     base_url = "https://www.reddit.com"
     header = {'User-Agent': 'JoeAPI', 'Content-Type': 'application/json'}
     res = requests.get(base_url + f'/r/{subreddit}/about.json',

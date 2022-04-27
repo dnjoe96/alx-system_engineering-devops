@@ -6,7 +6,13 @@ import requests
 
 
 def recurse(subreddit, hot_list=[], after=None):
-    """ Function to get recursive hot list """
+    """ Function to get recursive hot list
+    Args:
+        subreddit (str): The subreddit to query
+    Returns:
+        - The number of hot topics in a subreddit
+        - 0 if 'subreddit' is invalid.
+    """
     base_url = "https://www.reddit.com"
     header = {'User-Agent': 'JoeAPI', 'Content-Type': 'application/json'}
     param = {"limit": "10"}
