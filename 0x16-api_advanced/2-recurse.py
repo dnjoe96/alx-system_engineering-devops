@@ -8,7 +8,7 @@ def recurse(subreddit, hot_list=[], after=None):
     base_url = "https://www.reddit.com"
     header = {'User-Agent': 'JoeAPI', 'Content-Type': 'application/json'}
     param = {"limit": "10"}
-    url = base_url + f'/r/{subreddit}/hot'
+    url = base_url + f'/r/{subreddit}/hot.json'
     if after:
         url += f"?after={after}"
     res = requests.get(url, headers=header, params=param,

@@ -8,7 +8,7 @@ def top_ten(subreddit):
     base_url = "https://www.reddit.com"
     header = {'User-Agent': 'JoeAPI', 'Content-Type': 'application/json'}
     param = {"limit": "10"}
-    res = requests.get(base_url + f'/r/{subreddit}/hot',
+    res = requests.get(base_url + f'/r/{subreddit}/hot.json',
                        headers=header, params=param,
                        allow_redirects=False)
     if res.status_code != 200:

@@ -7,7 +7,7 @@ def number_of_subscribers(subreddit):
     """ Function to get the number of subscribers to a sub reddit """
     base_url = "https://www.reddit.com"
     header = {'User-Agent': 'JoeAPI', 'Content-Type': 'application/json'}
-    res = requests.get(base_url + f'/r/{subreddit}/about',
+    res = requests.get(base_url + f'/r/{subreddit}/about.json',
                        headers=header, allow_redirects=False)
     if res.status_code != 200:
         return 0
