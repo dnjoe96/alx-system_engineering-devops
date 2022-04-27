@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-""" Third function for advanced API """
+""" Third function for advanced API
+    Get the count of hot topics under s subreddit
+"""
 import requests
 
 

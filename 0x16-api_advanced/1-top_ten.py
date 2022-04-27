@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-""" Second function for advanced API """
+""" Second function for advanced API
+    Get the title of top 10 hot topics for a subreddit
+"""
 import requests
 
 

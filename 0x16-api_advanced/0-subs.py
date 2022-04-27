@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-""" First function for advanced API """
+""" First function for advanced API
+    Get the number of subscribers
+"""
 import requests
 
 
