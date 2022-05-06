@@ -1,0 +1,5 @@
+#!/bin/bash
+# Bash script to run python3 /root/README_Generator/rdm.py
+# Usage: ./rdm <command> <option>
+
+python3 /home/donjoe/Desktop/alx/README_Generator/rdm.py $1 $2
