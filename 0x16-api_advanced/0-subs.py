@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """ First function for advanced API
-    Get the number of subscribers
+    Get the number of subscribers from the reddit API
 """
 import requests
 
@@ -12,7 +12,7 @@ def number_of_subscribers(subreddit):
         subreddit (str): The subreddit to query
     Returns:
         - The number of subscribers if the subreddit is valid
-        - 0 if 'subreddit' is invalid.
+        or 0 if 'subreddit' is invalid.
     """
     base_url = "https://www.reddit.com"
     header = {'User-Agent': 'JoeAPI', 'Content-Type': 'application/json'}
